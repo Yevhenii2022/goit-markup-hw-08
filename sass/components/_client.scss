@@ -1,0 +1,36 @@
+/* Client */
+.client__title {
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: calc(42 / 36);
+	text-align: center;
+	color: var(--title-text-color);
+}
+
+.client__list {
+	display: flex;
+	gap: 30px;
+}
+
+.client__item {
+	width: 170px;
+	height: 92px;
+}
+
+.client__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	fill: #afb1b8;
+	transition: border var(--transition-function), fill var(--transition-function);
+
+	&:hover {
+		border: 1px solid var(--hover-text-color);
+		fill: var(--hover-text-color);
+	}
+}
