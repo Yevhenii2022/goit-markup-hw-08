@@ -5,8 +5,17 @@
 	color: var(--hover-text-color);
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
-	font-size: 26px;
+	font-size: 24px;
+	line-height: calc(28/24);
+
+	@media screen and (max-width: 1199px) {
+		margin-right: 0;
+	}	
+
+	@media screen and (min-width: 1200px) {
+		font-size: 26px;
 	line-height: calc(31 / 26);
+	}	
 }
 
 .logo--header {
