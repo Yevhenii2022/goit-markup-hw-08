@@ -768,6 +768,10 @@ img {
   color: var(--hover-text-color);
 }
 
+.footer--tumb {
+  margin-bottom: 60px;
+}
+
 .footer__text {
   display: block;
   margin-bottom: 20px;
@@ -933,20 +937,31 @@ img {
   margin-bottom: 30px;
   background-color: var(--hero-text-color);
 }
-.portfolio__item:nth-child(3n) {
-  margin-right: 0;
+@media screen and (max-width: 768px) {
+  .portfolio__item:last-child {
+    margin-bottom: 0;
+  }
 }
-.portfolio__item:nth-last-child(-n+3) {
-  margin-bottom: 0;
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__item {
     width: 354px;
+  }
+  .portfolio__item:last-child {
+    margin-bottom: 0;
+  }
+  .portfolio__item:nth-child(2n) {
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     width: 370px;
+  }
+  .portfolio__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .portfolio__item:nth-last-child(-n+3) {
+    margin-bottom: 0;
   }
 }
 
@@ -965,6 +980,21 @@ img {
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio__img {
+  width: 450px;
+  height: 294px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__img {
+    width: 370px;
+  }
 }
 
 .portfolio__overlay {
@@ -991,10 +1021,26 @@ img {
 }
 
 .portfolio__element {
-  width: 370px;
+  width: 450px;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__element {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__element {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__element--first {
+    height: 146px;
+  }
 }
 
 .portfolio__title {
@@ -1034,8 +1080,8 @@ img {
 
 .modal {
   position: absolute;
-  top: 40%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: opacity var(--transition-function), -webkit-transform var(--transition-function);
@@ -1052,8 +1098,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    top: 50%;
-    left: 50%;
     min-width: 528px;
     min-height: 581px;
   }
