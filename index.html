@@ -25,8 +25,7 @@
 			<div class="header__container container">
 				<div class="header__wraper">
 					<a class="logo" href="./index.html">
-						Web
-						<span class="logo--header">Studio</span>
+						Web<span class="logo--header">Studio</span>
 					</a>
 
 					<!-- Mobile-menu-btn -->
@@ -147,6 +146,10 @@
 								<p class="overlay__text">Десктопні додатки</p>
 							</div>
 							<img
+								srcset="
+									./images/work/img-work-1_lg@1x.jpg 1x,
+									./images/work/img-work-1_lg@2x.jpg 2x
+								"
 								src="./images/img-work-1.jpg"
 								alt="Приклад роботи 1"
 								width="370"
@@ -158,6 +161,10 @@
 								<p class="overlay__text">Мобільні додатки</p>
 							</div>
 							<img
+								srcset="
+									./images/work/img-work-2_lg@1x.jpg 1x,
+									./images/work/img-work-2_lg@2x.jpg 2x
+								"
 								src="./images/img-work-2.jpg"
 								alt="Приклад роботи 2"
 								width="370"
@@ -169,6 +176,10 @@
 								<p class="overlay__text">Дизайнерські рішення</p>
 							</div>
 							<img
+								srcset="
+									./images/work/img-work-3_lg@1x.jpg 1x,
+									./images/work/img-work-3_lg@2x.jpg 2x
+								"
 								src="./images/img-work-3.jpg"
 								alt="Приклад роботи 3"
 								width="370"
@@ -184,13 +195,41 @@
 					<h2 class="team__title">Наша команда</h2>
 					<ul class="team__list">
 						<li class="team--color">
-							<img
-								class="team__img"
-								src="./images/img-igor.jpg"
-								alt="Ігор"
-								width="450"
-								height="460"
-							/>
+							<picture>
+								<!-- Desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+										./images/team/img-igor_lg@1x.jpg 1x,
+										./images/team/img-igor_lg@2x.jpg 2x
+									"
+								/>
+								<!-- Tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/team/img-igor_md@1x.jpg 1x,
+										./images/team/img-igor_md@2x.jpg 2x
+									"
+								/>
+								<!-- Mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="
+										./images/team/img-igor_sm@1x.jpg 1x,
+										./images/team/img-igor_sm@2x.jpg 2x
+									"
+								/>
+
+								<img
+									class="team__img"
+									src="./images/team/img-igor_sm@1x.jpg"
+									alt="Ігор"
+									width="450"
+									height="460"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="team__item">
 								<h3 class="team__personal">Ігор Дем'яненко</h3>
 								<p class="team__text">Product Designer</p>
@@ -251,13 +290,41 @@
 							</div>
 						</li>
 						<li class="team--color">
-							<img
-								class="team__img"
-								src="./images/img-olga.jpg"
-								alt="Ольга"
-								width="450"
-								height="460"
-							/>
+							<picture>
+								<!-- Desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+										./images/team/img-olga_lg@1x.jpg 1x,
+										./images/team/img-olga_lg@2x.jpg 2x
+									"
+								/>
+								<!-- Tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/team/img-olga_md@1x.jpg 1x,
+										./images/team/img-olga_md@2x.jpg 2x
+									"
+								/>
+								<!-- Mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="
+										./images/team/img-olga_sm@1x.jpg 1x,
+										./images/team/img-olga_sm@2x.jpg 2x
+									"
+								/>
+
+								<img
+									class="team__img"
+									src="./images/team/img-olga_sm@1x.jpg"
+									alt="Ольга"
+									width="450"
+									height="460"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="team__item">
 								<h3 class="team__personal">Ольга Рєпіна</h3>
 								<p class="team__text">Frontend Developer</p>
@@ -318,13 +385,41 @@
 							</div>
 						</li>
 						<li class="team--color">
-							<img
-								class="team__img"
-								src="./images/img-mykola.jpg"
-								alt="Микола"
-								width="450"
-								height="460"
-							/>
+							<picture>
+								<!-- Desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+										./images/team/img-mykola_lg@1x.jpg 1x,
+										./images/team/img-mykola_lg@2x.jpg 2x
+									"
+								/>
+								<!-- Tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/team/img-mykola_md@1x.jpg 1x,
+										./images/team/img-mykola_md@2x.jpg 2x
+									"
+								/>
+								<!-- Mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="
+										./images/team/img-mykola_sm@1x.jpg 1x,
+										./images/team/img-mykola_sm@2x.jpg 2x
+									"
+								/>
+
+								<img
+									class="team__img"
+									src="./images/team/img-mykola_sm@1x.jpg"
+									alt="Микола"
+									width="450"
+									height="460"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="team__item">
 								<h3 class="team__personal">Микола Тарасов</h3>
 								<p class="team__text">Marketing</p>
@@ -384,15 +479,43 @@
 								</ul>
 							</div>
 						</li>
-
 						<li class="team--color">
-							<img
-								class="team__img"
-								src="./images/img-mykhailo.jpg"
-								alt="Михайло"
-								width="450"
-								height="460"
-							/>
+							<picture>
+								<!-- Desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+										./images/team/img-mykhailo_lg@1x.jpg 1x,
+										./images/team/img-mykhailo_lg@2x.jpg 2x
+									"
+								/>
+								<!-- Tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/team/img-mykhailo_md@1x.jpg 1x,
+										./images/team/img-mykhailo_md@2x.jpg 2x
+									"
+								/>
+								<!-- Mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="
+										./images/team/img-mykhailo_sm@1x.jpg 1x,
+										./images/team/img-mykhailo_sm@2x.jpg 2x
+									"
+								/>
+
+								<img
+									class="team__img"
+									src="./images/team/img-mykhailo_sm@1x.jpg"
+									alt="Михайло"
+									width="450"
+									height="460"
+									loading="lazy"
+								/>
+							</picture>
+
 							<div class="team__item">
 								<h3 class="team__personal">Михайло Єрмаков</h3>
 								<p class="team__text">UI Designer</p>
@@ -512,8 +635,7 @@
 				<div class="footer__wraper">
 					<div class="footer__element">
 						<a class="logo" href="./index.html">
-							Web
-							<span class="logo--footer">Studio</span>
+							Web<span class="logo--footer">Studio</span>
 						</a>
 					</div>
 					<address class="address">

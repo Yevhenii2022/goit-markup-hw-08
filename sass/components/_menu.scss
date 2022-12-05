@@ -57,8 +57,19 @@
 	display: flex;
 	flex-direction: column;
 
-	width: 100vw;
-	height: 100vh;
+
+	// width: 100vw;
+	// height: 100vh;
+
+	width: 100%;
+	height: 100%;
+
+	// max-width: 480px;
+	// height: auto;
+
+	overflow: scroll;
+
+
 	padding: 48px 40px;
 
 	background-color: var(--hero-text-color);
@@ -147,7 +158,7 @@
 
 .mobile-socials {
 	display: flex;
-	}
+}
 
 .mobile-socials__item {
 	font-weight: 500;
@@ -172,5 +183,3 @@
 // 	border: 1px solid rgba(33, 33, 33, 0.2);
 // 	transform: rotate(90deg);
 // }
-
-
