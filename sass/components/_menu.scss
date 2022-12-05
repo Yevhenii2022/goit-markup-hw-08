@@ -1,40 +1,9 @@
-// .menu {
-// 	display: flex;
-// 	padding: 0;
-// 	margin: 0;
-// 	list-style: none;
-// }
-
-// @media (max-width: 767px) {
-// 	.menu {
-// 		display: none;
-// 	}
-// }
-
-// .menu .link {
-// 	padding: 10px;
-// 	color: inherit;
-// 	text-decoration: none;
-// }
-
-// .menu .link:hover,
-// .menu .link:focus {
-// 	text-decoration: underline;
-// }
-
 .menu-toggle {
-	// min-height: 40px;
-	// min-width: 40px;
-	// display: flex;
-	// align-items: center;
-	// justify-content: center;
 	margin-left: auto;
 	padding: 0;
 	background-color: transparent;
 	cursor: pointer;
 	border: none;
-
-	// outline: none;
 	fill: var(--title-text-color);
 
 	&:hover,
@@ -53,30 +22,20 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-
 	display: flex;
 	flex-direction: column;
-
 
 	// width: 100vw;
 	// height: 100vh;
 
 	width: 100%;
 	height: 100%;
-
-	// max-width: 480px;
-	// height: auto;
-
 	overflow: scroll;
-
-
 	padding: 48px 40px;
-
 	background-color: var(--hero-text-color);
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
 		0px 1px 3px rgba(0, 0, 0, 0.16);
 	z-index: 9;
-
 	transform: translateX(100%);
 	transition: transform 250ms ease-in-out;
 }
@@ -89,32 +48,14 @@
 	position: absolute;
 	top: 10px;
 	right: 15px;
-	// color: #fff;
 }
 
 .mobile-menu {
-	// padding: 0;
-	// margin: 0;
-	// list-style: none;
-
 	margin-bottom: auto;
 }
 
-// .mobile-menu .link {
-// 	display: block;
-// 	padding: 10px;
-
-// 	font-weight: 500;
-// 	font-size: 40px;
-// 	line-height: calc(47 / 40);
-// 	letter-spacing: 0.02em;
-// 	color: var(--title-text-color);
-// }
-
 .mobile-menu__link {
 	display: block;
-	// padding: 10px;
-
 	font-weight: 500;
 	font-size: 40px;
 	line-height: calc(47 / 40);
@@ -175,11 +116,3 @@
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	transform: rotate(90deg);
 }
-
-// .mobile-socials__item::after:not(:last-child) {
-// 	content: " ";
-// 	margin-right: 10px;
-// 	margin-left: 10px;
-// 	border: 1px solid rgba(33, 33, 33, 0.2);
-// 	transform: rotate(90deg);
-// }
