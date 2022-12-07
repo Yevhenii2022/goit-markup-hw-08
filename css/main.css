@@ -37,6 +37,7 @@ body {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -343,8 +344,8 @@ img {
 
 /* Hero */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
@@ -354,6 +355,12 @@ img {
   background-position: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_sm@1x.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_sm@1x.jpg);
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -465,6 +472,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   margin-bottom: 30px;
   height: 120px;
   background-color: var(--section-background-color);
@@ -679,8 +687,13 @@ img {
 }
 
 .client__item {
-  width: 210px;
+  width: 100%;
   height: 92px;
+}
+@media screen and (min-width: 480px) {
+  .client__item {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .client__item {
@@ -738,10 +751,6 @@ img {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__container {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -810,11 +819,6 @@ img {
   text-transform: uppercase;
   color: var(--hero-text-color);
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__text {
-    padding-top: 5px;
-  }
-}
 @media screen and (max-width: 1199px) {
   .footer__text {
     text-align: center;
@@ -864,7 +868,7 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -872,6 +876,11 @@ img {
   border-radius: 4px;
   color: var(--address-text-color);
   background-color: inherit;
+}
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__input {
@@ -961,10 +970,15 @@ img {
 }
 
 .portfolio__item {
-  width: 450px;
+  width: 100%;
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: var(--hero-text-color);
+}
+@media screen and (min-width: 480px) {
+  .portfolio__item {
+    width: 450px;
+  }
 }
 @media screen and (max-width: 768px) {
   .portfolio__item:last-child {
@@ -1012,8 +1026,13 @@ img {
 }
 
 .portfolio__img {
-  width: 450px;
+  width: 100%;
   height: 294px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio__img {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio__img {
@@ -1050,10 +1069,15 @@ img {
 }
 
 .portfolio__element {
-  width: 450px;
+  width: 100%;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+@media screen and (min-width: 480px) {
+  .portfolio__element {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio__element {
@@ -1111,19 +1135,24 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
+  width: calc(100vw - 30px);
+  height: auto;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: opacity var(--transition-function), -webkit-transform var(--transition-function);
   transition: opacity var(--transition-function), -webkit-transform var(--transition-function);
   transition: transform var(--transition-function), opacity var(--transition-function);
   transition: transform var(--transition-function), opacity var(--transition-function), -webkit-transform var(--transition-function);
-  padding: 40px;
-  max-width: 450px;
-  height: auto;
   background-color: var(--hero-text-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal {
@@ -1133,8 +1162,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
-    min-height: 581px;
+    max-width: 528px;
   }
 }
 
@@ -1207,7 +1235,7 @@ img {
 .modal__input {
   padding: 12px;
   padding-left: 42px;
-  min-width: 370px;
+  width: 100%;
   min-height: 40px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1217,6 +1245,11 @@ img {
 }
 .modal__input:focus {
   border-color: var(--hover-text-color);
+}
+@media screen and (min-width: 480px) {
+  .modal__input {
+    min-width: 370px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal__input {
@@ -1288,7 +1321,12 @@ img {
       -ms-user-select: none;
           user-select: none;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .checkbox__field {
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .checkbox__field {
     margin-left: 8px;
   }
