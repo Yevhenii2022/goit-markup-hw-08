@@ -1246,6 +1246,42 @@ img {
 .modal__input:focus {
   border-color: var(--hover-text-color);
 }
+.modal__input:not(:-moz-placeholder-shown):valid:required {
+  border-color: rgb(47, 167, 0);
+}
+.modal__input:not(:-ms-input-placeholder):valid:required {
+  border-color: rgb(47, 167, 0);
+}
+.modal__input:not(:placeholder-shown):valid:required {
+  border-color: rgb(47, 167, 0);
+}
+.modal__input:not(:-moz-placeholder-shown):valid:required + .modal__icon {
+  fill: rgb(47, 167, 0);
+}
+.modal__input:not(:-ms-input-placeholder):valid:required + .modal__icon {
+  fill: rgb(47, 167, 0);
+}
+.modal__input:not(:placeholder-shown):valid:required + .modal__icon {
+  fill: rgb(47, 167, 0);
+}
+.modal__input:not(:-moz-placeholder-shown):invalid:required {
+  border-color: rgb(234, 31, 0);
+}
+.modal__input:not(:-ms-input-placeholder):invalid:required {
+  border-color: rgb(234, 31, 0);
+}
+.modal__input:not(:placeholder-shown):invalid:required {
+  border-color: rgb(234, 31, 0);
+}
+.modal__input:not(:-moz-placeholder-shown):invalid:required + .modal__icon {
+  fill: rgb(234, 31, 0);
+}
+.modal__input:not(:-ms-input-placeholder):invalid:required + .modal__icon {
+  fill: rgb(234, 31, 0);
+}
+.modal__input:not(:placeholder-shown):invalid:required + .modal__icon {
+  fill: rgb(234, 31, 0);
+}
 @media screen and (min-width: 480px) {
   .modal__input {
     min-width: 370px;
